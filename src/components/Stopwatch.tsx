@@ -4,24 +4,22 @@ import Footer from './Footer'
 
 const Stopwatch = () => {
     const [time, setTime] = useState(0)
-    const [running, setRunning] = useState(false)
     const intervalRef= useRef<number|undefined>(undefined) //does not re renders
 
     const start = () => {
         if (intervalRef.current) return;
         intervalRef.current = setInterval(() => { //returns an id
-            setRunning(true)
             setTime(prev => prev + 10)
         }, 10)
     }
 
     const stop = () => {
-        setRunning(false)
+        
         clearInterval(intervalRef.current)
     }
 
     const reset = () => {
-        setRunning(false)
+
         clearInterval(intervalRef.current)
         intervalRef.current = undefined;
         setTime(0)
