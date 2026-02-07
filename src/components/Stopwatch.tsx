@@ -5,7 +5,7 @@ import Footer from './Footer'
 const Stopwatch = () => {
     const [time, setTime] = useState(0)
     const [running, setRunning] = useState(false)
-    const intervalRef: number | null | any = useRef(null) //does not re renders
+    const intervalRef= useRef<number | null>(null) //does not re renders
 
     const start = () => {
         if (intervalRef.current) return;
