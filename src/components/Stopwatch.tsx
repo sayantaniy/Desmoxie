@@ -36,9 +36,9 @@ const Stopwatch = () => {
         <div>
             <Navbar />
             <div className="rounded-2xl bg-lime-300 text-lime-950 border-lime-900 px-8 py-4 font-poppins bg-blend-lighten border-4">
-                <h1>Try using the Stopwatch!</h1>
+                <h1 className="flex items-center justify-center">Try using the Stopwatch!</h1>
                 <h1 className="flex justify-around items-center p-5 font-bold text-xl "> {format(time)} </h1>
-                <div className="flex justify-around items-center gap-2">
+                <div className="flex justify-around items-center gap-2 mt-2">
                     <button className="bg-lime-500 px-4 rounded-2xl py-2 hover:bg-lime-600" onClick={start}>Start</button>
                     <button className="bg-lime-500 px-4 rounded-2xl py-2  hover:bg-lime-600" onClick={stop}>Stop</button>
                     <button className="bg-lime-500 px-4 rounded-2xl py-2  hover:bg-lime-600" onClick={reset}>Reset</button>

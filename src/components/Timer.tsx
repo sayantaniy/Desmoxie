@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Pomodoro() {
   const WORK_TIME = 25 * 60;   // 25 min
@@ -36,6 +38,7 @@ export default function Pomodoro() {
 
   return (
     <div>
+      <Navbar/>
       <h2>{isWork ? "Work" : "Break"}</h2>
       <h1>{format(timeLeft)}</h1>
 
@@ -48,6 +51,7 @@ export default function Pomodoro() {
       }}>
         Reset
       </button>
+      <Footer/>
     </div>
   );
 }
