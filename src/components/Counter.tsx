@@ -21,7 +21,7 @@ const Counter = () => {
               setCount(count - 1);
             }
           }}
-          className="bg-lime-500 px-4 rounded-2xl py-2"
+          className="bg-lime-500 px-4 rounded-2xl py-2  hover:bg-lime-600"
         >
           
           -
@@ -31,7 +31,7 @@ const Counter = () => {
           onClick={() => {
             setCount(count + 1);
           }}
-          className="bg-lime-500 px-4 rounded-2xl py-2"
+          className="bg-lime-500 px-4 rounded-2xl py-2  hover:bg-lime-600"
         >
           
           +

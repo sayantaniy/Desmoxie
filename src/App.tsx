@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import Counter from "./components/Counter"
 import Stopwatch from "./components/Stopwatch"
+import Timer from "./components/Timer"
 import Home from "./components/Home"
 
 
@@ -11,6 +12,7 @@ const App = () => {
       
       <Routes>
         <Route path="/stopwatch" element={<Stopwatch />} />
+        <Route path="/timer" element={<Timer/>}/>
         <Route path="/counter" element={<Counter />} />
         <Route path="/" element={<Home />} />
       </Routes>

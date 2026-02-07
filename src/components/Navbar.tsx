@@ -6,6 +6,8 @@ const Navbar = () => {
         <Link className='m-3  hover:bg-lime-200  hover:text-black px-3 py-1 rounded-full' to="/">Home</Link>
         <Link className='m-3  hover:bg-lime-200  hover:text-black px-3 py-1 rounded-full' to="/counter">Counter</Link>
         <Link className='m-3  hover:bg-lime-200  hover:text-black px-3 py-1 rounded-full' to="/stopwatch">Stopwatch</Link>
+        <Link className='m-3  hover:bg-lime-200  hover:text-black px-3 py-1 rounded-full' to="/timer">Timer</Link>
+
     </div>
   )
 }
